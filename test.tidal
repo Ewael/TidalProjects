@@ -1,9 +1,36 @@
-d1 $ fast 2 $ s "bd cp"
 
-d1 $ s "arpy*8" # note "0 2 4 5 7 9 11 12"
 
-d1 $ s "glitch" # n (irand 8)
+d1 $ sound "drum"
 
-d1 $ stack [s "bd cp",s "arpy*4" # note "[0,4,7]" ]
+d1 $ sound "drum:1"
 
+d1 $ s "future"
+
+d1 $ sound "bd cp"
+
+d1 $ sound "bd hh sn hh"
+
+setcps 0.5
+
+d1 $ sound "bd bd hh bd sn hh bd"
+d2 $ sound "sn sn:2 sn bd sn"
+
+d1 $ s "arpy cp arpy:2"
+d2 $ s "sn sn:2 bd sn"
+
+d1 $ s "bd ~ sn:3 bd sn:5 ~ bd:2 sn:2"
+
+d1 $ s "bd [bd cp] bd bd"
+
+d1 $ "[bd bd sn:5] [bd sn:3]"
+
+d1 $ "bd [bd [sn sn]] cp"
+
+d1 $ s "bd sd*2"
+
+d1 $ s "[bd bd/2] [sn/2, cp]"
+
+d1 $ s "bd <sd cp arpy>"
+
+-- STFU or CRTL+. to HUSH
 d1 $ silence
